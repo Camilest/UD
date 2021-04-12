@@ -16,7 +16,7 @@
         {% for p in productos %}
             <tr>
                 <td>{{ p.grupo }}</td>
-                <td><img src="static/{{ p.imagen }}" alt="{{ p.imagen }}" width="150" height="150"></td>
+                <td><img src="../static/{{ p.imagen }}" alt="{{ p.imagen }}" width="150" height="150"></td>
                 <td>{{ p.descripcion }}</td>
             </tr>
         {% endfor %}
