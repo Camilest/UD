@@ -3,7 +3,6 @@ class Producto:
         self.imagen = ""
         self.descripcion = ""
         self.grupo = ""
-       
 
 class Arma(Producto):
     def __init__(self):
@@ -12,14 +11,20 @@ class Arma(Producto):
 class ArmaHumanos(Arma):
     def __init__(self):
         self.grupo = "Humanos"
-        self.imagen = "imagenes/humanos/arma.jpg"
-        self.descripcion = "Arma de los humanos"
+        self.imagen = "imagenes/humanos/arma.png"
+        self.descripcion = "Arma de los Humanos"
 
 class ArmaOrcos(Arma):
     def __init__(self):
         self.grupo = "Orcos"
         self.imagen = "imagenes/orcos/arma.png"
-        self.descripcion = "Arma de los orcos"
+        self.descripcion = "Arma de los Orcos"
+
+class ArmaElfos(Arma):
+    def __init__(self):
+        self.grupo = "Elfos"
+        self.imagen = "imagenes/elfos/arma.png"
+        self.descripcion = "Arma de los Elfos"
 
 class Escudo(Producto):
     def __init__(self):
@@ -27,44 +32,41 @@ class Escudo(Producto):
 
 class EscudoHumanos(Escudo):
     def __init__(self):
-        self.grupo = "Humanos"
+        self.grupo = "Orcos"
         self.imagen = "imagenes/humanos/escudo.png"
-        self.descripcion = "Escudo de los humanos"
+        self.descripcion = "Escudo  de los Humanos"
 
 class EscudoOrcos(Escudo):
     def __init__(self):
         self.grupo = "Orcos"
-        self.imagen = "imagenes/Orcos/escudo.png"
+        self.imagen = "imagenes/orcos/escudo.png"
         self.descripcion = "Escudo de los Orcos"
+
+class EscudoElfos(Escudo):
+    def __init__(self):
+        self.grupo = "Elfos"
+        self.imagen = "imagenes/elfos/escudo.png"
+        self.descripcion = "Escudo de los Elfos"
 
 class Montura(Producto):
     def __init__(self):
         Producto.__init__(self)
 
-class MonturaHumano(Montura):
+class MonturaElfos(Montura):
     def __init__(self):
-        self.grupo = "Orcos"
-        self.imagen = "imagenes/Humanos/escudo.png"
-        self.descripcion = "Montura de los Humanos"
-
-class MonturaOrco(Montura):
-    def __init__(self):
-        self.grupo = "Orcos"
-        self.imagen = "imagenes/Orcos/escudo.png"
-        self.descripcion = "Montura de los Orcos"
+        self.grupo = "Elfos"
+        self.imagen = "imagenes/elfos/montura.jpg"
+        self.descripcion = "Montura de los Elfos"
 
 class Cuerpo(Producto):
     def __init__(self):
         Producto.__init__(self)
 
-class CuerpoHumano(Cuerpo):
+class CuerpoElfos(Montura):
     def __init__(self):
-        self.grupo = "Orcos"
-        self.imagen = "imagenes/Humanos/escudo.png"
-        self.descripcion = "cuerpo de los humanos"
+        self.grupo = "Elfos"
+        self.imagen = "imagenes/elfos/cuerpo.png"
+        self.descripcion = "Cuerpo de los Elfos"
 
-class CuerpoOrco(Cuerpo):
-    def __init__(self):
-        self.grupo = "Orcos"
-        self.imagen = "imagenes/Orcos/escudo.png"
-        self.descripcion = "Cuerpo de los Orcos"
+
+    

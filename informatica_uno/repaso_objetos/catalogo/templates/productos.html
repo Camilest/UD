@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-</head>
-<body>
-    <table>
-        <tr>
-            <th>Grupo</th>
-            <th>Imagen</th>
-            <th>Descripción</th>
-        </tr>
-        {% for p in productos %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table style="border: 1px solid black">
             <tr>
-                <td>{{ p.grupo }}</td>
-                <td><img src="../static/{{ p.imagen }}" alt="{{ p.imagen }}" width="150" height="150"></td>
-                <td>{{ p.descripcion }}</td>
+                <th>Grupo</th>
+                <th>Imagen</th>
+                <th>Descripcion</th>
             </tr>
-        {% endfor %}
-    </table>
-</body>
+            {% for p in productos %}
+                <tr>
+                    <td>{{ p.grupo }}</td>
+                    <td><img src="../static/{{ p.imagen }}" width="100"></td>
+                    <td>{{p.descripcion}} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
 </html>
