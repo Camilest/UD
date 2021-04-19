@@ -1,4 +1,4 @@
-Jhon Henrry Aguiar Moreno
+Jhon Henrry Aguiar Moreno;
 Cristhian Camilo Pérez Estrada
 
 1. Patrón Utilizado: 
